@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    setlocale(0, "");
+
+    cout << "[*] Калькулятор" << endl << endl;
+    cout << "Введите первое число: ";
+    int num_1;
+    cin >> num_1;
+    cout << "Введите второе число: ";
+    int num_2;
+    cin >> num_2;
+    cout << "[1] Сложение" << endl;
+    cout << "[2] Вычитание" << endl;
+    cout << "[3] Умножение" << endl;
+    cout << "[4] Деление" << endl;
+    cout << "[5] Деление с остатком" << endl;
+    cout << "[*] Выберите действие: ";
+    int vybor;
+    cin >> vybor;
+
+    if (vybor == 1) {
+        cout << "Резльутат: " << num_1 + num_2;
+    }
+    else if (vybor == 2) {
+        cout << "Резльутат: " << num_1 - num_2;
+    }
+    else if (vybor == 3) {
+        cout << "Резльутат: " << num_1 * num_2;
+    }
+    else if (vybor == 4) {
+        cout << "Резльутат: " << num_1 / num_2;
+    }
+    else if (vybor == 5) {
+        cout << "Резльутат: " << num_1 % num_2;
+    }
+    else {
+        cout << "Такого номера нет, сэр!";
+    }
+
+    int _; cin >> _;
+    return 0;
+}
